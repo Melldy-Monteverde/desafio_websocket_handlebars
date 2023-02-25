@@ -1,0 +1,17 @@
+{{#if products}}
+  <h1>Products</h1>
+  {{#each products}}
+    <div class="prodList-contianer">
+      <h2>{{this.title}}</h2>
+      <ul>
+        <li><b>Description:</b> {{this.description}}</li>
+        <li><b>Category:</b> {{this.category}}</li>
+        <li><b>Price: $</b> {{this.price}}</li>
+        <li><b>Stock:</b> {{this.stock}}</li>
+        <li><b>Code:</b> {{this.code}}</li>
+      </ul>
+    </div>
+  {{/each}}
+{{else}}
+  <strong>There are not products to display :/</strong>
+{{/if}}

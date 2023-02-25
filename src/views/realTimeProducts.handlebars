@@ -1,0 +1,27 @@
+  <h2 class="hero-title">Add New Product</h2>
+  <form id="form-data" class="form-data">
+    <label for="prod-title">Name:</label>
+    <input type="text" name="title" placeholder="Enter product title">
+
+    <label for="prod-description">Description:</label>
+    <input type="text" name="description" placeholder="Enter product description">
+
+    <label for="prod-category">Category:</label>
+    <input type="text" name="category" placeholder="Enter product category">
+
+    <label for="prod-price">Price:</label>
+    <input type="text" name="price" placeholder="Enter product price">
+
+    <label for="prod-stock">Stock:</label>
+    <input type="text" name="stock" placeholder="Enter product stock">
+
+    <label for="prod-code">Code:</label>
+    <input type="text" name="code" placeholder="Enter product code">
+
+    <button id="btn-form" class="btn-form">Add Product</button>
+  </form>
+
+  <div id="products-container" class="products-container"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
